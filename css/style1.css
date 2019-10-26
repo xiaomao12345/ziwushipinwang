@@ -1,0 +1,85 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	width: 1349px;
+	height: 620px;
+	margin:auto;
+}
+
+
+@font-face{
+	font-family: 'titlefamily';
+	src:url(..//font/李旭科钢笔行书.ttf);
+}
+@font-face{
+	font-family: 'leftfamily';
+	src:url(..//font/字体管家甜甜圈.ttf);
+}
+.wrap{
+    width: 1349px;
+    height: 620px;
+    position: fixed;
+    background: #c0deed;
+   
+}
+.main{
+	width: 500px;
+	height: 400px;
+	margin:auto;
+	top: 50%;
+}
+.main h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.main input {
+    width: 320px;
+    display: block;
+    height: 36px;
+    border: 0;
+    padding: 6px 10px;
+    line-height: 24px;
+    margin: 32px auto;
+    color: #1296db;
+}
+.main input[type="text"] , .main input[type="password"]  {
+    background-color: white;
+    font-size: 16px;
+    color: #1296db;
+    -webkit-transition: all .28s ease-in .1s;
+    transition: all .28s ease-in .1s;
+}
+.main input[type='submit'] {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #1296db;
+    background-color: white;
+    -webkit-transition: all .28s ease-in .1s;
+    transition: all .28s ease-in .1s;
+}
+.main input:focus {
+    width: 400px;
+}
+.main input[type='submit']:hover {
+    cursor: pointer;
+    width: 400px;
+}
+.small a{
+    color: #1296db;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+    float: left;
+}
+.small span{
+    color: #1296db;
+    text-align: center;
+    margin-left: 110px;
+    float: left;
+}

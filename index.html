@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>子午视频网</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="images/未标题-5 - 副本.png" type="image/x-icon"/>  
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/all.js"></script>
+</head>
+<body>
+<header>
+<div class="ee">
+	<div id="logo" class="logo">
+		<img src="images/5.png">
+		<h2>子午视频网</h2>
+	</div>
+	<div id="head-nav" class="head-nav">
+		<ul>
+			<li><a href="#">免费·课程</a></li>
+			<li><a href="#">前端·学习</a></li>
+			<li><a href="#">后端·探索</a></li>
+			<li><a href="#">平面·设计</a></li>
+			<li><a href="#">职业·考证</a></li>
+		</ul>
+		<input type="text" value="搜索你感兴趣的课程..." onblur="if(this.value=' ') value='搜索你感兴趣的课程...';" onfocus="if(this.value='搜索你感兴趣的课程...css/') value=' ';">
+		<a href="#"><img src="images/放大镜.png"></a>
+	</div>
+	<div id="loginBar" class="loginBar">
+		<button id="login1"><a href="#">登录</a></button>
+		<div id="cover" class="cover"></div>
+		<div id="msg" class="msg hide">
+	    	<div class="submain">
+	    		<div class="submenu" id="submenu">
+					<ul>
+				    	<li class="subactive"><a href="#">登录</a></li>
+					</ul>
+				</div>
+				<input type="button" value="×"  class="over" id="over">
+	    	</div>
+	    	<div class="submain_txt" id="submain_txt1">
+	    	    <input type="text" maxlength="37" placeholder="请输入登录邮箱/手机号" class="txt1"/>
+                <input type="password" maxlength="16" placeholder="请输入密码" class="txt2"/>
+	    		<p>忘记密码</p>
+	    		<input type="submit" name="txt" value="登录" class="txt3">
+	    	</div>
+		</div>
+	</div>
+	<div class="loginBar1">
+	    <input type="submit" name="txt" value="注册" class="button" onclick="window.location.href='zhuce.html'">
+	</div>
+</div>
+</header>
+<div id="main" class="main">
+<aside>
+	<p>子午视频，在宇宙中学习</p>
+	<div id="sidebar">
+	<h2>课程列表</h2>
+	<ul>
+		<li>
+			<div class="title">设计学院</div>
+			<div class="menu">
+				<p>UI设计</p>
+				<p>平面设计</p>
+			</div>
+		</li>
+		<li>
+			<div class="title">语言学习</div>
+			<div class="menu">
+				<p>c语言</p>
+				<p>Java</p>
+				<p>c++</p>
+				<p>c#</p>
+			</div>
+		</li>
+		<li>
+			<div class="title">技能学习</div>
+			<div class="menu">
+				<p>网页设计</p>
+				<p>软件开发</p>
+				<p>网站制作</p>
+				<p>游戏开发</p>
+			</div>
+		</li>
+		<li>
+			<div class="title">前端开发</div>
+			<div class="menu">
+				<p>html+css</p>
+				<p>h5+c3</p>
+				<p>JavaScript</p>
+				<p>jQuery</p>
+			</div>
+		</li>
+		<li>
+			<div class="title">后端应用</div>
+			<div class="menu">
+				<p>Java</p>
+				<p>PHP</p>
+				<p>Python</p>
+			</div>
+		</li>
+		<li style="border-bottom: 1px solid #424242">
+			<div class="title">兴趣爱好</div>
+			<div class="menu">
+				<p>动漫设计</p>
+				<p>ps</p>
+				<p>手机编程</p>
+			</div>
+		</li>
+	</ul>
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		$(".title").click(function(){//gei每一个title加点击事件
+			$(this).addClass("active").parent().siblings().find(".title").removeClass("active");//将className设为当前的  去掉上一个className
+			$(this).parent().find(".menu").slideToggle().parent().siblings().find(".menu").slideUp();//将当前的menu打开
+		});//点击事件
+	</script>
+</aside>
+<div class="mm">
+	<div class="kk"></div>
+	<div class="content" id="content">
+		<div id="bgaaa" class="bgaaa">
+		<div class="container" id="container">
+			<div class="list" id="list" style="left:-1160px">
+				<img src="轮播图图片/20180705160157_37062.jpg">
+				<img src="轮播图图片/20161201175523_64337.jpg">
+				<img src="轮播图图片/20170223174027_44671.jpg">
+				<img src="轮播图图片/20180209160855_54832.png">
+				<img src="轮播图图片/20180704174405_79488.jpg">
+				<img src="轮播图图片/20180705160157_37062.jpg">
+				<img src="轮播图图片/20161201175523_64337.jpg">
+			</div>
+			<div class="buttons" id="buttons">
+				<span index="1" class="on"></span>
+				<span index="2"></span>
+				<span index="3"></span>
+				<span index="4"></span>
+				<span index="5"></span>
+			</div>
+			<a href="javascript:;" class="arrow" id="prev">&lt;</a>
+			<a href="javascript:;" class="arrow" id="next">&gt;</a>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="mm">
+	<div class="kk"></div>
+	<div id="bgbbb" class="bgbbb">
+		<div class="content-type1" id="content-type">
+			<h2><img src="images/icon-1 - type1-l.png">精/品/课/堂<img src="images/icon-1 - type1-r.png"></h2>
+			<article>
+				<div class="arcticle1" id="arc">
+				<a href="#"><img src="images/type1-1.jpg"></a>
+				<p>
+					<a href="#">GO实现千万级别WebSocket消息推送服务</a><br/>
+					<a href="#"><span>中级</span></a>
+					<a href="#"><img src="images/je08.png"><span>1742</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: red">免费</span></a>
+				</p>
+				</div>
+				<div class="arcticle2" id="arc">
+				<a href="#"><img src="images/type1-2.jpg"></a>
+				<p>
+					<a href="#">Java仿微信全栈 高性能后台+移动客户端</a><br/>
+					<a href="#"><span>高级</span></a>
+					<a href="#"><img src="images/je08.png"><span>2256</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: black">￥299.00</span></a>
+				</p>
+				</div>
+				<div class="arcticle3" id="arc">
+				<a href="#"><img src="images/type1-3.jpg"></a>
+				<p>
+					<a href="#">React16.4快速上手，强化基础+技能提升</a><br/>
+					<a href="#"><span>初级</span></a>
+					<a href="#"><img src="images/je08.png"><span>3421</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: red">免费</span></a>
+				</p>
+				</div>
+				<div class="arcticle4" id="arc">
+				<a href="#"><img src="images/type1-4.jpg"></a>
+				<p>
+					<a href="#">JAVA分布式优惠券系统后台，手把手实战开发</a><br/>
+					<a href="#"><span>中级</span></a>
+					<a href="#"><img src="images/je08.png"><span>6744</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: black">￥669.00</span></a>
+				</p>
+				</div>
+			</article>
+		</div>
+	</div>
+</div>
+<div class="mm">
+	<div class="kk"></div>
+	<div id="bgbbb" class="bgccc">
+		<div class="content-type2" id="content-type">
+			<h2><img src="images/icon-1 - type2-l.png">新/手/入/门/<img src="images/icon-1 - type2-r.png"></h2>
+			<article>
+				<div class="arcticle1" id="arc">
+				<a href="#"><img src="images/1.png"></a>
+				<p>
+					<a href="#">HTML+CSS基础入门</a><br/>
+					<a href="#"><span>初级</span></a>
+					<a href="#"><img src="images/je08.png"><span>1569</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: red">免费</span></a>
+				</p>
+				</div>
+				<div class="arcticle2" id="arc">
+				<a href="#"><img src="images/2.png"></a>
+				<p>
+					<a href="#">JavaScript基础入门</a><br/>
+					<a href="#"><span>初级</span></a>
+					<a href="#"><img src="images/je08.png"><span>3356</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: red">免费</span></a>
+				</p>
+				</div>
+				<div class="arcticle3" id="arc">
+				<a href="#"><img src="images/3.png"></a>
+				<p>
+					<a href="#">Python课程初探</a><br/>
+					<a href="#"><span>初级</span></a>
+					<a href="#"><img src="images/je08.png"><span>5678</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: red">免费</span></a>
+				</p>
+				</div>
+				<div class="arcticle4" id="arc">
+				<a href="#"><img src="images/4.png"></a>
+				<p>
+					<a href="#">Bootstrap入门</a><br/>
+					<a href="#"><span>初级</span></a>
+					<a href="#"><img src="images/je08.png"><span>1290</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: red">免费</span></a>
+				</p>
+				</div>
+			</article>
+		</div>
+	</div>
+</div>
+<div class="mm">
+	<div class="kk"></div>
+	<div id="bgbbb" class="bgddd">
+		<div class="content-type3" id="content-type">
+			<h2><img src="images/icon-1 - type3-l.png">技/能/提/升/<img src="images/icon-1 - type3-r.png"></h2>
+			<article>
+				<div class="arcticle1" id="arc">
+				<a href="#"><img src="images/6.jpg"></a>
+				<p>
+					<a href="#">个性化推荐算法实践入门必修课+深入解析</a><br/>
+					<a href="#"><span>中级</span></a>
+					<a href="#"><img src="images/je08.png"><span>1256</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: red">免费</span></a>
+				</p>
+				</div>
+				<div class="arcticle2" id="arc">
+				<a href="#"><img src="images/7.jpg"></a>
+				<p>
+					<a href="#">深度学习之神经网络（CNN/RNN/GAN）算法</a><br/>
+					<a href="#"><span>高级</span></a>
+					<a href="#"><img src="images/je08.png"><span>1892</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: black">￥399.00</span></a>
+				</p>
+				</div>
+				<div class="arcticle3" id="arc">
+				<a href="#"><img src="images/8.jpg"></a>
+				<p>
+					<a href="#">Python人工智能常用库 	Nunpy使用入门</a><br/>
+					<a href="#"><span>初级</span></a>
+					<a href="#"><img src="images/je08.png"><span>1092</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: red">免费</span></a>
+				</p>
+				</div>
+				<div class="arcticle4" id="arc">
+				<a href="#"><img src="images/9.jpg"></a>
+				<p>
+					<a href="#">纯正商业级应用 微信小程序开发实践</a><br/>
+					<a href="#"><span>高级</span></a>
+					<a href="#"><img src="images/je08.png"><span>2189</span></a><br/>
+					<a href="#"><em>收藏</em></a>
+					<a href="#"><span style="color: black">￥799.00</span></a>
+				</p>
+				</div>
+			</article>
+		</div>
+	</div>
+</div>
+<div class="mm">
+	<div class="kk"></div>
+	<div id="bgccc" class="bgeee">
+		<div class="word" id="word">
+			<ul>
+				<li>参考文档
+					<div id="guild" class="guild">
+						<a href="#">
+							<img src="images/20160819132650_53489.png">
+							<div id="tag" class="tag"></div>
+							<h3>算法内外功兼修训练营，最强学习路线</h3>
+							<p>产品经理|产品原型之基本布局</p>
+							<p>UI设计|入门UI必知的设计基础</p>
+							<p>Python开发|Python必学框架Gevent</p>
+							<P>php开发|MySQL语句的正确详解</P>
+							<P>嵌入式|嵌入式开发中如何启动内核指令</P>
+							<p>ios开发|swift语言的基本数据类型详解</p>
+						</a>
+					</div>
+				</li>
+				<li>就业指导
+					<div id="guild" class="guild">
+						<a href="#">
+							<img src="images/20160819132703_66293.png">
+							<div id="tag" class="tag"></div>
+							<h3>用最短的时间高效的学习Python全指导</h3>
+							<p>10张图告诉你Leader和Boss的区别</p>
+							<p>2018跳槽最靠谱建议：钱多活少离家近...</p>
+							<p>想转行 你准备好了吗？</p>
+							<p>喜报 子午视频八月中旬正式上线</p>
+							<p>职场|瞎忙族与高效人士的13个不同点</p>
+							<p>职场|有一种挨骂叫成长</p>
+						</a>
+					</div>
+				</li>
+				<li>技术干货
+					<div id="guild" class="guild">
+						<a href="#">
+							<img src="images/20160819132814_77543.png">
+							<div id="tag" class="tag"></div>
+							<h3>求职旺季，如何避开面试官套路？</h3>
+							<p>兔费直播I 2个小时，让你的文章阅读量..</p>
+							<p>从“品牌定位”的运营角度,来看看小程... </p>
+							<p>带你玩转跨站脚本攻击cross site script </p>
+							<p>免费直播|数据型运营 养成系列之一:玩..  </p>
+							<p>6种常见web漏洞坑</p>
+							<p>免费直播| DIY无人机第一 步:必须要学掌..  </p>
+						</a>
+					</div>
+				</li>
+				<li>行业资讯
+					<div id="guild" class="guild">
+						<a href="#">
+							<img src="images/20160819132734_60611.png">
+							<div id="tag" class="tag"></div>
+							<h3>微信小程序开发实战，2018小程序最新特性</h3>
+							<p>子午视频喜获“315互联网诚信示范企业...</p>
+							<p>麦子学院喜获“315互联网诚信示范企业...</p>
+							<p>麦子学院荣获腾讯网双料大奖</p>
+							<p> 兔费直播|如何建立全面的用户分析模型</p>
+							<p>麦子学院代表中国新职业在线教育第一-品..</p>
+							<p> 周四直播|搜狐资深前端工程师, 30分钟...</p>
+							<p>麦子学院落户中国首个互联网学院明年....</p>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="mm" style="height: 120px;">
+	<div class="kk" style="height: 120px;"></div>
+	<div id="bgfff" class="bgfff">
+		<footer>
+			<ul>
+				<a href="#"><li>企业合作</li></a>
+				<a href="#"><li>人才招聘</li></a>
+				<a href="#"><li>联系我们</li></a>
+				<a href="#"><li>讲师招募</li></a>
+				<a href="#"><li>常见问题</li></a>
+				<a href="#"><li>意见反馈</li></a>
+			</ul>
+			<ul class="qw" id="qw">
+				<a href="#"><li class="img1"></li></a>
+				<a href="#"><li class="img2"></li></a>
+			</ul>
+			<p>©&nbsp;2018&nbsp;jwzw.com&nbsp;&nbsp;京ICP备 12003892号-11</p>
+			<ul class="qw-1" id="qw-1">
+				<a href="#"><li class="img1-1">关注微博</li></a>
+				<a href="#"><li class="img2-2">关注微信公众号</li></a>
+			</ul>
+		</footer>
+	</div>
+</div>
+</div>
+</body>
+</html>
+ 
